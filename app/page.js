@@ -1,4 +1,8 @@
-import Link from 'next/link';
+// Is line ko:
+import { supabase } from '@/lib/supabase';
+
+// Isse badal dein (Relative Path):
+import { supabase } from '../../lib/supabase';
 
 export default function Home() {
   return (
