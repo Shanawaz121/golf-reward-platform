@@ -1,14 +1,22 @@
-# Digital Heroes - Golf Reward Platform
+# Golf Rewards Platform
+
+A high-performance full-stack MVP built for the Digital Heroes technical assessment.
 
 ## Features Implemented
-* [cite_start]**Rolling 5 Score Logic**: Only the latest 5 scores (Stableford 1-45) are retained[cite: 42, 46].
-* [cite_start]**Charity Integration**: Users select a charity with a min 10% contribution[cite: 75, 76].
-* [cite_start]**Monthly Draw Engine**: Admin can simulate and publish random draws[cite: 55, 60, 62].
-* [cite_start]**Modern UI**: Emotion-driven design without traditional golf clichés[cite: 121, 122].
+- **Rolling 5 Logic:** System automatically displays only the 5 most recent scores using Supabase query modifiers.
+- **Duplicate Prevention:** Prevents multiple score entries for the same date per user.
+- **Modern UI:** Built with Next.js and Tailwind CSS, following a premium dark/light aesthetic.
+- **Clean Architecture:** Uses App Router and logical path separation.
 
-## Test Credentials
-* **User**: testuser@example.com / password123
-* [cite_start]**Admin**: admin@digitalheroes.co.in / adminpass786 
+## Setup Instructions
+1. Clone the repository.
+2. Install dependencies: `npm install`.
+3. Set environment variables in Vercel/Local:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+4. Build the project: `npm run build`.
 
-## Deployment
-* [cite_start]Live URL: [Aapki Vercel URL yahan likhein]
+## Tech Stack
+- Framework: Next.js 14
+- Database: Supabase
+- Styling: Tailwind CSS
